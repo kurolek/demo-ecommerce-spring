@@ -1,6 +1,6 @@
 package org.kurolek.demo.springboot.demoecommerce.service;
 
-import org.kurolek.demo.springboot.demoecommerce.dao.CategoryDAO;
+import org.kurolek.demo.springboot.demoecommerce.dao.CategoryHibernateDAO;
 import org.kurolek.demo.springboot.demoecommerce.entity.Category;
 import org.kurolek.demo.springboot.demoecommerce.model.CategoryModel;
 import org.kurolek.demo.springboot.demoecommerce.model.ResponseModel;
@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 public class CategoryService {
 
     @Autowired
-    private CategoryDAO dao;
+    private CategoryHibernateDAO dao;
 
 
     public ResponseModel createCategory(CategoryModel categoryModel){
