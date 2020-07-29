@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo eCommerce</title>
+</head>
+<body>
+<script>
+    fetch('http://localhost:8083/eCommerce/getAllCategories',
+        {
+            'method':'get'
+        })
+        // Выполнить, когда результат запроса на сервер будет получен
+        .then((response) => {
+            console.log(response)
+            return response.json()
+        })
+        // Выполнить, когда тело ответа от сервера (в формате json) будет превращено
+        // в объект
+        .then((data) => {
+            console.log(data)
+        })
+
+</script>
+</body>
+</html>

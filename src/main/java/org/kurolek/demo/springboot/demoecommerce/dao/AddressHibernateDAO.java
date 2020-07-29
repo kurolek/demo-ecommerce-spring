@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface AddressHibernateDAO extends JpaRepository<Address, Long> {
     List<Address> getAddressesByCountry(String countryName);
-    Address findById(long id);
+
 
 }

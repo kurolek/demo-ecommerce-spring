@@ -1,15 +1,13 @@
 package org.kurolek.demo.springboot.demoecommerce.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "Addresses")
 @Data
+@EqualsAndHashCode
 @Builder(toBuilder = true)
 @NoArgsConstructor
 @AllArgsConstructor
